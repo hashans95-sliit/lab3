@@ -124,7 +124,7 @@ public class Item {
 		return output;
 	}
 	
-	public String search(String itemID){
+	public String readItem(String itemID){
 		String output = "";
 		try {
 			Connection con = connect();

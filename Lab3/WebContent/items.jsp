@@ -42,7 +42,7 @@ if (request.getParameter("btnRemove") != null){
 <form method="post" action="items.jsp">
  <%
  if (request.getParameter("btnUpdate") != null){
-	 out.print(new Item().search(request.getParameter("itemID")));
+	 out.print(new Item().readItem(request.getParameter("itemID")));
  } else {
 	 out.print("Item code: <input name=\"itemCode\" type=\"text\" ><br>"
 			 + "Item name: <input name=\"itemName\" type=\"text\" ><br>"
